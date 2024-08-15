@@ -28,7 +28,7 @@ public class UserEntity {
 
     @ManyToMany(fetch = FetchType.EAGER) // Fetch type can be adjusted based on needs
     @JoinTable(
-            name = "user_roles",
+            name = "u",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id")
     )
